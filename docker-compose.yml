@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  apiRest:
+    image: paulogoncalvesbh/serverest:latest
+    container_name: apiRest
+    tty: true
+    volumes:
+      - type: bind
+        source: ./src/test/resources/testMass/data
+        target: /app/src/data
+    ports:
+      - "3000:3000"

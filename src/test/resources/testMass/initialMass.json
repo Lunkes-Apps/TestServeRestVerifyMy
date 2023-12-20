@@ -1,0 +1,38 @@
+[
+  {
+    "nome": "Testador Da Silva2",
+    "email": "testador2@silva.com",
+    "password": "teste1232",
+    "administrador": "true"
+  },
+  {
+    "nome": "Testador Da Silva4",
+    "email": "testador@silva4.com",
+    "password": "teste1234",
+    "administrador": "true"
+  },
+  {
+    "nome": "Lucas Cardoso",
+    "email": "Lucas@pCardoso.com",
+    "password": "@Dc3abc",
+    "administrador": "false"
+  },
+  {
+    "nome": "Testador Santos",
+    "email": "testador@santos.com",
+    "password": "teste1234",
+    "administrador": "true"
+  },
+  {
+    "nome": "Gabriel Pereira",
+    "email": "gabriek@pereira.com",
+    "password": "testeABC",
+    "administrador": "true"
+  },
+  {
+    "nome": "Testador Da Silva",
+    "email": "testador@silva.com",
+    "password": "teste123",
+    "administrador": "true"
+  }
+]
