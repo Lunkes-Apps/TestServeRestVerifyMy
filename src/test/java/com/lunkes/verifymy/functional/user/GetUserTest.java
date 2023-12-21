@@ -1,4 +1,4 @@
-package com.lunkes.verifymy.user;
+package com.lunkes.verifymy.functional.user;
 
 import com.lunkes.verifymy.base.BaseTest;
 import com.lunkes.verifymy.domain.GetResponse;
@@ -18,6 +18,7 @@ public class GetUserTest extends BaseTest {
 
     @BeforeClass
     public void setUpTest(){
+        deletAllPreviusUsers();
         insertInitialData("src/test/resources/testMass/initialMass.json");
         log.info("Test Mass has been inserted");
     }

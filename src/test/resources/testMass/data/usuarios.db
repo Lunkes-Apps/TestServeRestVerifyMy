@@ -4,3 +4,271 @@
 {"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"TestadorSantos32"}
 {"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"UzoGUJSLMyyVExyL"}
 {"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"ebebJijk0xdB3p7x"}
+{"$$deleted":true,"_id":"2ebebJijk0xdB3p7x"}
+{"$$deleted":true,"_id":"4ebebJijk0xdB3p7x"}
+{"$$deleted":true,"_id":"AuFwXX91Zo2Cxqs6"}
+{"$$deleted":true,"_id":"TestadorSantos32"}
+{"$$deleted":true,"_id":"UzoGUJSLMyyVExyL"}
+{"$$deleted":true,"_id":"ebebJijk0xdB3p7x"}
+{"nome":"Mateus Cardoso","email":"Mateus@Cardoso.com","password":"@Dc3abc","administrador":"true","_id":"k2dk8GazhHXPINu4"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"false","_id":"J3VFnRKWQ3nNHGmy"}
+{"$$deleted":true,"_id":"J3VFnRKWQ3nNHGmy"}
+{"$$deleted":true,"_id":"k2dk8GazhHXPINu4"}
+{"nome":"Mateus Cardoso","email":"Mateus@Cardoso.com","password":"@Dc3abc","administrador":"true","_id":"PWHnj37AiWYhClav"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"false","_id":"KRUhw5lYAdUFRN5w"}
+{"$$deleted":true,"_id":"KRUhw5lYAdUFRN5w"}
+{"$$deleted":true,"_id":"PWHnj37AiWYhClav"}
+{"nome":"Mateus Cardoso","email":"Mateus@Cardoso.com","password":"@Dc3abc","administrador":"true","_id":"kT0YbDEtM24E9r9Y"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"false","_id":"qW3DA75rkxrHpgzl"}
+{"$$deleted":true,"_id":"kT0YbDEtM24E9r9Y"}
+{"$$deleted":true,"_id":"qW3DA75rkxrHpgzl"}
+{"nome":"Mateus Cardoso","email":"Mateus@Cardoso.com","password":"@Dc3abc","administrador":"true","_id":"vNtvcptJIExw78LD"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"false","_id":"F17gskiYUQySHiQd"}
+{"$$deleted":true,"_id":"F17gskiYUQySHiQd"}
+{"$$deleted":true,"_id":"vNtvcptJIExw78LD"}
+{"nome":"Mateus Cardoso","email":"Mateus@Cardoso.com","password":"@Dc3abc","administrador":"true","_id":"VsysL2iDbWcvCrxr"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"false","_id":"xieOgUW6WZPRg8te"}
+{"$$deleted":true,"_id":"VsysL2iDbWcvCrxr"}
+{"$$deleted":true,"_id":"xieOgUW6WZPRg8te"}
+{"nome":"Mateus Cardoso","email":"Mateus@Cardoso.com","password":"@Dc3abc","administrador":"true","_id":"6SeMdlpZu4GBoSw5"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"false","_id":"7eyw9tZPoGhrM3qh"}
+{"$$deleted":true,"_id":"6SeMdlpZu4GBoSw5"}
+{"$$deleted":true,"_id":"7eyw9tZPoGhrM3qh"}
+{"nome":"Mateus Cardoso","email":"Mateus@Cardoso.com","password":"@Dc3abc","administrador":"true","_id":"qDeOt161Ggt59Ahr"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"false","_id":"ubfFigjR6teMj2y8"}
+{"$$deleted":true,"_id":"qDeOt161Ggt59Ahr"}
+{"$$deleted":true,"_id":"ubfFigjR6teMj2y8"}
+{"nome":"Mateus Cardoso","email":"Mateus@Cardoso.com","password":"@Dc3abc","administrador":"true","_id":"0UgZu7POMucZNfbJ"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"false","_id":"mgL3eUf7KeQSWBX7"}
+{"$$deleted":true,"_id":"0UgZu7POMucZNfbJ"}
+{"$$deleted":true,"_id":"mgL3eUf7KeQSWBX7"}
+{"nome":"Mateus Cardoso","email":"Mateus@Cardoso.com","password":"@Dc3abc","administrador":"true","_id":"1WyGWpXTzEcCcnKj"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"false","_id":"5f5teeAsjzYJ9fLk"}
+{"$$deleted":true,"_id":"1WyGWpXTzEcCcnKj"}
+{"$$deleted":true,"_id":"5f5teeAsjzYJ9fLk"}
+{"nome":"Mateus Cardoso","email":"Mateus@Cardoso.com","password":"@Dc3abc","administrador":"true","_id":"hdghwL82VH9oVNHs"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"false","_id":"f9qX54ddiWoKP6bf"}
+{"$$deleted":true,"_id":"f9qX54ddiWoKP6bf"}
+{"$$deleted":true,"_id":"hdghwL82VH9oVNHs"}
+{"nome":"Testador Da Silva2","email":"testador2@silva.com","password":"teste1232","administrador":"true","_id":"QWQP2V5eNxcH21yl"}
+{"nome":"Testador Da Silva4","email":"testador@silva4.com","password":"teste1234","administrador":"true","_id":"kDmRhrXDaG72bypH"}
+{"nome":"Lucas Cardoso","email":"Lucas@pCardoso.com","password":"@Dc3abc","administrador":"false","_id":"6TLVE1lhZWOx0Txf"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"rbR8UI50TELSLdKh"}
+{"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"ebBQNWpl6IQkqzC7"}
+{"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"fnZEdE2ASOAhEvSw"}
+{"nome":"João Carvalho","email":"joao@carvalho.com","password":"vamostestar","administrador":"true","_id":"xrL3li5vauZUibZt"}
+{"$$deleted":true,"_id":"6TLVE1lhZWOx0Txf"}
+{"$$deleted":true,"_id":"QWQP2V5eNxcH21yl"}
+{"$$deleted":true,"_id":"ebBQNWpl6IQkqzC7"}
+{"$$deleted":true,"_id":"fnZEdE2ASOAhEvSw"}
+{"$$deleted":true,"_id":"kDmRhrXDaG72bypH"}
+{"$$deleted":true,"_id":"rbR8UI50TELSLdKh"}
+{"$$deleted":true,"_id":"xrL3li5vauZUibZt"}
+{"nome":"Testador Da Silva2","email":"testador2@silva.com","password":"teste1232","administrador":"true","_id":"z1d9acg7cCOg60nP"}
+{"nome":"Testador Da Silva4","email":"testador@silva4.com","password":"teste1234","administrador":"true","_id":"TbHHmz7DK037uDw8"}
+{"nome":"Lucas Cardoso","email":"Lucas@pCardoso.com","password":"@Dc3abc","administrador":"false","_id":"wFesswV9Q4BC5qFw"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"dTRbjbkoaUSoPHlQ"}
+{"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"E78vFt0mQC15ACps"}
+{"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"uPfKm3LmLspndEzD"}
+{"nome":"Um novo nome","email":"novo@gmail.com","password":"teste123","administrador":"true","_id":"W2cRKn057sEpUkOf"}
+{"nome":"Um novo nome teste","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"dTRbjbkoaUSoPHlQ"}
+{"$$deleted":true,"_id":"E78vFt0mQC15ACps"}
+{"$$deleted":true,"_id":"TbHHmz7DK037uDw8"}
+{"$$deleted":true,"_id":"W2cRKn057sEpUkOf"}
+{"$$deleted":true,"_id":"dTRbjbkoaUSoPHlQ"}
+{"$$deleted":true,"_id":"uPfKm3LmLspndEzD"}
+{"$$deleted":true,"_id":"wFesswV9Q4BC5qFw"}
+{"$$deleted":true,"_id":"z1d9acg7cCOg60nP"}
+{"nome":"Mateus Cardoso","email":"Mateus@Cardoso.com","password":"@Dc3abc","administrador":"true","_id":"tZSZx8uaAVoxsNJr"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"false","_id":"jOfq1MXeO4vZDcRA"}
+{"$$deleted":true,"_id":"jOfq1MXeO4vZDcRA"}
+{"$$deleted":true,"_id":"tZSZx8uaAVoxsNJr"}
+{"nome":"Testador Da Silva2","email":"testador2@silva.com","password":"teste1232","administrador":"true","_id":"Bu9CUTs09FBssAst"}
+{"nome":"Testador Da Silva4","email":"testador@silva4.com","password":"teste1234","administrador":"true","_id":"tpkBfU7i7abxozlC"}
+{"nome":"Lucas Cardoso","email":"Lucas@pCardoso.com","password":"@Dc3abc","administrador":"false","_id":"Y4EdeXaOQmFH4iJK"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"Lb6K7qPbllm10ATi"}
+{"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"RfJeUU2cVt1GgUIS"}
+{"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"KUedM53SBkKkIBwb"}
+{"$$deleted":true,"_id":"Bu9CUTs09FBssAst"}
+{"$$deleted":true,"_id":"KUedM53SBkKkIBwb"}
+{"$$deleted":true,"_id":"Lb6K7qPbllm10ATi"}
+{"$$deleted":true,"_id":"RfJeUU2cVt1GgUIS"}
+{"$$deleted":true,"_id":"Y4EdeXaOQmFH4iJK"}
+{"$$deleted":true,"_id":"tpkBfU7i7abxozlC"}
+{"nome":"Testador Da Silva2","email":"testador2@silva.com","password":"teste1232","administrador":"true","_id":"5LLWyaZyhXTIaCJE"}
+{"nome":"Testador Da Silva4","email":"testador@silva4.com","password":"teste1234","administrador":"true","_id":"pz3hH7Hcfm7u0ZTj"}
+{"nome":"Lucas Cardoso","email":"Lucas@pCardoso.com","password":"@Dc3abc","administrador":"false","_id":"zFBODsdlNSR2DpCR"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"PZ2SsQEit6duo2LQ"}
+{"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"uaIdWFkrgDC7n3rW"}
+{"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"pLbfLI4gQMkjzO8v"}
+{"$$deleted":true,"_id":"pLbfLI4gQMkjzO8v"}
+{"$$deleted":true,"_id":"5LLWyaZyhXTIaCJE"}
+{"$$deleted":true,"_id":"PZ2SsQEit6duo2LQ"}
+{"$$deleted":true,"_id":"pz3hH7Hcfm7u0ZTj"}
+{"$$deleted":true,"_id":"uaIdWFkrgDC7n3rW"}
+{"$$deleted":true,"_id":"zFBODsdlNSR2DpCR"}
+{"nome":"Mateus Cardoso","email":"Mateus@Cardoso.com","password":"@Dc3abc","administrador":"true","_id":"ONmNLXM9n2xEDxhs"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"false","_id":"wGMLfQsfFf8C5Qze"}
+{"$$deleted":true,"_id":"ONmNLXM9n2xEDxhs"}
+{"$$deleted":true,"_id":"wGMLfQsfFf8C5Qze"}
+{"nome":"Testador Da Silva2","email":"testador2@silva.com","password":"teste1232","administrador":"true","_id":"HTo01UoMLCbyfeLF"}
+{"nome":"Testador Da Silva4","email":"testador@silva4.com","password":"teste1234","administrador":"true","_id":"jGLo1r0zY5HXyuJ8"}
+{"nome":"Lucas Cardoso","email":"Lucas@pCardoso.com","password":"@Dc3abc","administrador":"false","_id":"HDcC4W9eFr2wCINk"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"5Icvr1MgqPDzC43s"}
+{"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"6I3EzOQQOsFBwtOh"}
+{"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"15g7dEkhlDBCdZhM"}
+{"$$deleted":true,"_id":"15g7dEkhlDBCdZhM"}
+{"$$deleted":true,"_id":"5Icvr1MgqPDzC43s"}
+{"$$deleted":true,"_id":"6I3EzOQQOsFBwtOh"}
+{"$$deleted":true,"_id":"HDcC4W9eFr2wCINk"}
+{"$$deleted":true,"_id":"HTo01UoMLCbyfeLF"}
+{"$$deleted":true,"_id":"jGLo1r0zY5HXyuJ8"}
+{"nome":"Testador Da Silva2","email":"testador2@silva.com","password":"teste1232","administrador":"true","_id":"lyDnUM5MwkIXITyW"}
+{"nome":"Testador Da Silva4","email":"testador@silva4.com","password":"teste1234","administrador":"true","_id":"SttRLgJe2AcNccPd"}
+{"nome":"Lucas Cardoso","email":"Lucas@pCardoso.com","password":"@Dc3abc","administrador":"false","_id":"GRyIsjwuflUDmOGN"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"IUKJsWiz9jREKLo2"}
+{"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"xOBu5RrH21qMgtVS"}
+{"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"uJEJBqxjuzsJMVfm"}
+{"$$deleted":true,"_id":"GRyIsjwuflUDmOGN"}
+{"$$deleted":true,"_id":"IUKJsWiz9jREKLo2"}
+{"$$deleted":true,"_id":"SttRLgJe2AcNccPd"}
+{"$$deleted":true,"_id":"lyDnUM5MwkIXITyW"}
+{"$$deleted":true,"_id":"uJEJBqxjuzsJMVfm"}
+{"$$deleted":true,"_id":"xOBu5RrH21qMgtVS"}
+{"nome":"Mateus Cardoso","email":"Mateus@Cardoso.com","password":"@Dc3abc","administrador":"true","_id":"rkYeKpnivpK6isNi"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"false","_id":"KILLRCbruDmY673t"}
+{"$$deleted":true,"_id":"KILLRCbruDmY673t"}
+{"$$deleted":true,"_id":"rkYeKpnivpK6isNi"}
+{"nome":"Testador Da Silva2","email":"testador2@silva.com","password":"teste1232","administrador":"true","_id":"o4OOBzJTSRChtRBX"}
+{"nome":"Testador Da Silva4","email":"testador@silva4.com","password":"teste1234","administrador":"true","_id":"eK0j0Z9tX5HyfkBh"}
+{"nome":"Lucas Cardoso","email":"Lucas@pCardoso.com","password":"@Dc3abc","administrador":"false","_id":"bNWLsznqb0lDvaO1"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"252BqRFMfllqpvda"}
+{"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"Tc9mr3lvvM6ixPb9"}
+{"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"aAP4GGDxazH9vABv"}
+{"$$deleted":true,"_id":"aAP4GGDxazH9vABv"}
+{"$$deleted":true,"_id":"252BqRFMfllqpvda"}
+{"$$deleted":true,"_id":"Tc9mr3lvvM6ixPb9"}
+{"$$deleted":true,"_id":"bNWLsznqb0lDvaO1"}
+{"$$deleted":true,"_id":"eK0j0Z9tX5HyfkBh"}
+{"$$deleted":true,"_id":"o4OOBzJTSRChtRBX"}
+{"nome":"Testador Da Silva2","email":"testador2@silva.com","password":"teste1232","administrador":"true","_id":"EhRDlkn6FwQt8cUR"}
+{"nome":"Testador Da Silva4","email":"testador@silva4.com","password":"teste1234","administrador":"true","_id":"wnOJhsLovRdgssYf"}
+{"nome":"Lucas Cardoso","email":"Lucas@pCardoso.com","password":"@Dc3abc","administrador":"false","_id":"ufhZsS9WHnPmaFfT"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"4Kxw8B43xTpCC4b2"}
+{"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"1Zvf2nDYaarfadgc"}
+{"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"ITVnv6KJLZuhRZkQ"}
+{"$$deleted":true,"_id":"1Zvf2nDYaarfadgc"}
+{"$$deleted":true,"_id":"4Kxw8B43xTpCC4b2"}
+{"$$deleted":true,"_id":"EhRDlkn6FwQt8cUR"}
+{"$$deleted":true,"_id":"ITVnv6KJLZuhRZkQ"}
+{"$$deleted":true,"_id":"ufhZsS9WHnPmaFfT"}
+{"$$deleted":true,"_id":"wnOJhsLovRdgssYf"}
+{"nome":"Testador Da Silva2","email":"testador2@silva.com","password":"teste1232","administrador":"true","_id":"81nFYAWhtjrNfSgq"}
+{"nome":"Testador Da Silva4","email":"testador@silva4.com","password":"teste1234","administrador":"true","_id":"FA82MxPyJTgpsKBp"}
+{"nome":"Lucas Cardoso","email":"Lucas@pCardoso.com","password":"@Dc3abc","administrador":"false","_id":"1kYrWG3bvXns0BxH"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"ZHfiUBliNBEmnZtk"}
+{"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"u1TfpZ9LyKHMbfQY"}
+{"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"7QyaYQr9n1d05lk8"}
+{"nome":"João Carvalho","email":"joao@carvalho.com","password":"vamostestar","administrador":"true","_id":"QrmzyBnlB0nJzNJ8"}
+{"$$deleted":true,"_id":"1kYrWG3bvXns0BxH"}
+{"$$deleted":true,"_id":"7QyaYQr9n1d05lk8"}
+{"$$deleted":true,"_id":"81nFYAWhtjrNfSgq"}
+{"$$deleted":true,"_id":"FA82MxPyJTgpsKBp"}
+{"$$deleted":true,"_id":"QrmzyBnlB0nJzNJ8"}
+{"$$deleted":true,"_id":"ZHfiUBliNBEmnZtk"}
+{"$$deleted":true,"_id":"u1TfpZ9LyKHMbfQY"}
+{"nome":"Testador Da Silva2","email":"testador2@silva.com","password":"teste1232","administrador":"true","_id":"sZMutMZI602GNFw5"}
+{"nome":"Testador Da Silva4","email":"testador@silva4.com","password":"teste1234","administrador":"true","_id":"AH2CuLmgR1fuCTMn"}
+{"nome":"Lucas Cardoso","email":"Lucas@pCardoso.com","password":"@Dc3abc","administrador":"false","_id":"xsZKyf7eswA2XvEI"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"NTd4ZzQvrA9TPPLF"}
+{"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"06caJviWe9P1N4UT"}
+{"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"LETJXMG1j6iydXXp"}
+{"nome":"Um novo nome","email":"novo@gmail.com","password":"teste1234","administrador":"true","_id":"6Bcdsvc7eutyaM4Y"}
+{"nome":"Um novo nome teste","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"LETJXMG1j6iydXXp"}
+{"$$deleted":true,"_id":"06caJviWe9P1N4UT"}
+{"$$deleted":true,"_id":"6Bcdsvc7eutyaM4Y"}
+{"$$deleted":true,"_id":"AH2CuLmgR1fuCTMn"}
+{"$$deleted":true,"_id":"LETJXMG1j6iydXXp"}
+{"$$deleted":true,"_id":"NTd4ZzQvrA9TPPLF"}
+{"$$deleted":true,"_id":"sZMutMZI602GNFw5"}
+{"$$deleted":true,"_id":"xsZKyf7eswA2XvEI"}
+{"nome":"Testador Da Silva2","email":"testador2@silva.com","password":"teste1232","administrador":"true","_id":"qa52hBUMMCjoZa5q"}
+{"nome":"Testador Da Silva4","email":"testador@silva4.com","password":"teste1234","administrador":"true","_id":"HqEZff7BVZUcRpM0"}
+{"nome":"Lucas Cardoso","email":"Lucas@pCardoso.com","password":"@Dc3abc","administrador":"false","_id":"L7TCxnqhwReReZie"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"i1P0NPgQ0HMYNjLL"}
+{"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"SfGxvrn6C0BKjHgX"}
+{"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"vJL6zMDwBVTKnsju"}
+{"$$deleted":true,"_id":"HqEZff7BVZUcRpM0"}
+{"$$deleted":true,"_id":"L7TCxnqhwReReZie"}
+{"$$deleted":true,"_id":"SfGxvrn6C0BKjHgX"}
+{"$$deleted":true,"_id":"i1P0NPgQ0HMYNjLL"}
+{"$$deleted":true,"_id":"qa52hBUMMCjoZa5q"}
+{"$$deleted":true,"_id":"vJL6zMDwBVTKnsju"}
+{"nome":"Testador Da Silva2","email":"testador2@silva.com","password":"teste1232","administrador":"true","_id":"PyJSyUDeRUBxYL7J"}
+{"nome":"Testador Da Silva4","email":"testador@silva4.com","password":"teste1234","administrador":"true","_id":"qstCL4WhxEiuz1Ol"}
+{"nome":"Lucas Cardoso","email":"Lucas@pCardoso.com","password":"@Dc3abc","administrador":"false","_id":"TBNFRnOGA9uwxvXr"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"UfdFxjbvgBpC5ipI"}
+{"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"86jLxtsySK5mRoqQ"}
+{"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"pf8cV2XCPfcKpzi0"}
+{"$$deleted":true,"_id":"86jLxtsySK5mRoqQ"}
+{"$$deleted":true,"_id":"PyJSyUDeRUBxYL7J"}
+{"$$deleted":true,"_id":"TBNFRnOGA9uwxvXr"}
+{"$$deleted":true,"_id":"UfdFxjbvgBpC5ipI"}
+{"$$deleted":true,"_id":"pf8cV2XCPfcKpzi0"}
+{"$$deleted":true,"_id":"qstCL4WhxEiuz1Ol"}
+{"nome":"Testador Da Silva2","email":"testador2@silva.com","password":"teste1232","administrador":"true","_id":"P8ABywg1TwcnfS2i"}
+{"nome":"Testador Da Silva4","email":"testador@silva4.com","password":"teste1234","administrador":"true","_id":"GtfLXnwV78tiQG6m"}
+{"nome":"Lucas Cardoso","email":"Lucas@pCardoso.com","password":"@Dc3abc","administrador":"false","_id":"zFW83HMJqqfsSu2W"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"em61bTguAOnMkckT"}
+{"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"F0IZYsP4IkQ18faO"}
+{"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"RscOdX6tiVGk97de"}
+{"$$deleted":true,"_id":"F0IZYsP4IkQ18faO"}
+{"$$deleted":true,"_id":"GtfLXnwV78tiQG6m"}
+{"$$deleted":true,"_id":"P8ABywg1TwcnfS2i"}
+{"$$deleted":true,"_id":"RscOdX6tiVGk97de"}
+{"$$deleted":true,"_id":"em61bTguAOnMkckT"}
+{"$$deleted":true,"_id":"zFW83HMJqqfsSu2W"}
+{"nome":"Testador Da Silva2","email":"testador2@silva.com","password":"teste1232","administrador":"true","_id":"x7olcOcHyrMHuTmU"}
+{"nome":"Testador Da Silva4","email":"testador@silva4.com","password":"teste1234","administrador":"true","_id":"nyeHy7OlFmVxlQdE"}
+{"nome":"Lucas Cardoso","email":"Lucas@pCardoso.com","password":"@Dc3abc","administrador":"false","_id":"I963P6GGrAr7LFj0"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"SfefQQLi7UanpMWK"}
+{"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"wrfNgz20E2TtzPcp"}
+{"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"FVgavDJEFrq6vr42"}
+{"$$deleted":true,"_id":"FVgavDJEFrq6vr42"}
+{"$$deleted":true,"_id":"I963P6GGrAr7LFj0"}
+{"$$deleted":true,"_id":"SfefQQLi7UanpMWK"}
+{"$$deleted":true,"_id":"nyeHy7OlFmVxlQdE"}
+{"$$deleted":true,"_id":"wrfNgz20E2TtzPcp"}
+{"$$deleted":true,"_id":"x7olcOcHyrMHuTmU"}
+{"nome":"Mateus Cardoso","email":"Mateus@Cardoso.com","password":"@Dc3abc","administrador":"true","_id":"9elDQ00eMWjqbg6P"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"false","_id":"2JhbcznHsrH8qECy"}
+{"$$deleted":true,"_id":"2JhbcznHsrH8qECy"}
+{"$$deleted":true,"_id":"9elDQ00eMWjqbg6P"}
+{"nome":"Testador Da Silva2","email":"testador2@silva.com","password":"teste1232","administrador":"true","_id":"6oPn3wANApMcm4pZ"}
+{"nome":"Testador Da Silva4","email":"testador@silva4.com","password":"teste1234","administrador":"true","_id":"iVYRPRzhcVj7HSkR"}
+{"nome":"Lucas Cardoso","email":"Lucas@pCardoso.com","password":"@Dc3abc","administrador":"false","_id":"EE55OTlNT7tG6H1P"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"b8n4Zx9qcq7qHOkF"}
+{"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"TdIaCykk4gprXGrj"}
+{"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"cKe965N9e4KCPKqP"}
+{"$$deleted":true,"_id":"6oPn3wANApMcm4pZ"}
+{"$$deleted":true,"_id":"EE55OTlNT7tG6H1P"}
+{"$$deleted":true,"_id":"TdIaCykk4gprXGrj"}
+{"$$deleted":true,"_id":"b8n4Zx9qcq7qHOkF"}
+{"$$deleted":true,"_id":"cKe965N9e4KCPKqP"}
+{"$$deleted":true,"_id":"iVYRPRzhcVj7HSkR"}
+{"nome":"Mateus Cardoso","email":"Mateus@Cardoso.com","password":"@Dc3abc","administrador":"true","_id":"E6YdDZxsrYbW4ka1"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"false","_id":"AQK1GD0IhGNagCS3"}
+{"$$deleted":true,"_id":"AQK1GD0IhGNagCS3"}
+{"$$deleted":true,"_id":"E6YdDZxsrYbW4ka1"}
+{"nome":"Testador Da Silva2","email":"testador2@silva.com","password":"teste1232","administrador":"true","_id":"dFNQDGHHZBGiXFgt"}
+{"nome":"Testador Da Silva4","email":"testador@silva4.com","password":"teste1234","administrador":"true","_id":"qz0nPINhOqA3QtOp"}
+{"nome":"Lucas Cardoso","email":"Lucas@pCardoso.com","password":"@Dc3abc","administrador":"false","_id":"nkKVePDHbt46KKbz"}
+{"nome":"Testador Santos","email":"testador@santos.com","password":"teste1234","administrador":"true","_id":"fDO5Q3z6X6HzkLPy"}
+{"nome":"Gabriel Pereira","email":"gabriek@pereira.com","password":"testeABC","administrador":"true","_id":"CGzH8kOG64il9LOQ"}
+{"nome":"Testador Da Silva","email":"testador@silva.com","password":"teste123","administrador":"true","_id":"OhuMauSDF50wRxjN"}
+{"$$deleted":true,"_id":"CGzH8kOG64il9LOQ"}
+{"$$deleted":true,"_id":"OhuMauSDF50wRxjN"}
+{"$$deleted":true,"_id":"dFNQDGHHZBGiXFgt"}
+{"$$deleted":true,"_id":"fDO5Q3z6X6HzkLPy"}
+{"$$deleted":true,"_id":"nkKVePDHbt46KKbz"}
+{"$$deleted":true,"_id":"qz0nPINhOqA3QtOp"}

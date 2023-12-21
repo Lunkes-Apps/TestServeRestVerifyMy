@@ -1,8 +1,12 @@
 package com.lunkes.verifymy.base;
 
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.lunkes.verifymy.client.clients.AuthClient;
+import com.lunkes.verifymy.client.clients.ProdutClient;
 import com.lunkes.verifymy.client.clients.UserClient;
 import com.lunkes.verifymy.domain.GetResponse;
+import com.lunkes.verifymy.domain.GetResponseProdutos;
+import com.lunkes.verifymy.domain.Product;
 import com.lunkes.verifymy.domain.User;
 import lombok.extern.java.Log;
 import org.testng.annotations.AfterClass;
@@ -20,23 +24,40 @@ import static io.restassured.RestAssured.enableLoggingOfRequestAndResponseIfVali
 @Log
 public class BaseTest {
 
+    public static final String PATH_CONTRACT_SCHEMAS = "src/test/resources/schemas";
+
     public static UserClient userClient = new UserClient();
+    public static ProdutClient produtClient = new ProdutClient();
+    public static AuthClient authClient = new AuthClient();
+
     public List<User> usersToTest;
+    public List<Product> productsToTest;
+
+    public static String auth;
 
     @BeforeClass
     @Parameters({"env"})
-    public void setup(@Optional("dev") String environment){
+    public void setup(@Optional("local") String environment){
         baseURI = getProperty("api.uri." + environment);
         enableLoggingOfRequestAndResponseIfValidationFails();
-        deletAllPreviusUsers();
+
     }
 
-    private void deletAllPreviusUsers(){
+    protected void deletAllPreviusUsers(){
        GetResponse users = userClient.getUsers().extract().body().as(GetResponse.class);
        users.getUsuarios().forEach((user)->{
            userClient.deletUser(user.get_id());
        });
        log.info(users.getQuantidade() + " previous users has been deleted");
+    }
+
+    protected void deleteAllPreviusProducts(){
+        GetResponseProdutos products = produtClient.getProducts()
+                .extract().as(GetResponseProdutos.class);
+        products.getProdutos().forEach((product -> {
+            produtClient.deletProdut(product.get_id(), auth).statusCode(200);
+        }));
+        log.info(products.getQuantidade() + " previous users has been deleted");
     }
 
     protected void insertInitialData(String path){
@@ -46,9 +67,23 @@ public class BaseTest {
         }));
     }
 
+    protected void insertInitialProducts(String path){
+        productsToTest = getJsonOfObject(path, new TypeReference<List<Product>>() {});
+        productsToTest.forEach((product -> {
+            produtClient.postProduct(product.toBody(), auth).statusCode(201);
+        }));
+    }
+
+    protected void authUser(){
+        String user = usersToTest.get(0).getEmail();
+        String password = usersToTest.get(0).getPassword();
+        auth = authClient.getAuth(user, password);
+    }
+
     @AfterClass
     public void tearDown(){
-       deletAllPreviusUsers();
+        deleteAllPreviusProducts();
+        deletAllPreviusUsers();
     }
 
 

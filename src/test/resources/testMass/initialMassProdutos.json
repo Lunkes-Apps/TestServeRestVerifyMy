@@ -1,0 +1,20 @@
+[
+  {
+    "nome": "Logitech MX Vertical",
+    "preco": 470,
+    "descricao": "Mouse",
+    "quantidade": 381
+  },
+  {
+    "nome": "Mesa Gamer DELL",
+    "preco": 2005,
+    "descricao": "Mesa para jogos da DELL",
+    "quantidade": 235
+  },
+  {
+    "nome": "Monitor DELL",
+    "preco": 1059,
+    "descricao": "Monitor DELL 30 polegadas",
+    "quantidade": 2396
+  }
+]

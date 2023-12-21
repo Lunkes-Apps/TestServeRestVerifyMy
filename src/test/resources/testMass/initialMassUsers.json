@@ -1,0 +1,14 @@
+[
+  {
+    "nome": "Mateus Cardoso",
+    "email": "Mateus@Cardoso.com",
+    "password": "@Dc3abc",
+    "administrador": "true"
+  },
+  {
+    "nome": "Testador Santos",
+    "email": "testador@santos.com",
+    "password": "teste1234",
+    "administrador": "False"
+  }
+]
