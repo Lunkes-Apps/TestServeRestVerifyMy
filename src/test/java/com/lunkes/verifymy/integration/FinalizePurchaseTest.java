@@ -1,12 +1,8 @@
 package com.lunkes.verifymy.integration;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lunkes.verifymy.base.BaseTest;
-import com.lunkes.verifymy.domain.GetResponse;
 import com.lunkes.verifymy.domain.Product;
 import com.lunkes.verifymy.domain.User;
-import com.lunkes.verifymy.domain.shopcar.GetResponseShopCar;
 import com.lunkes.verifymy.domain.shopcar.ItemShopCar;
 import com.lunkes.verifymy.domain.shopcar.PostShopCar;
 import lombok.extern.java.Log;
@@ -14,7 +10,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+
+import static org.hamcrest.Matchers.equalTo;
 
 @Log
 public class FinalizePurchaseTest extends BaseTest {
@@ -57,13 +56,28 @@ public class FinalizePurchaseTest extends BaseTest {
                 .quantidade(4)
                 .build());
 
-        System.out.println(items);
         PostShopCar postShopCar = PostShopCar.builder()
                 .produtos(items).build();
 
-        System.out.println(postShopCar);
+        /* Act */
         shopCarClient.postShopCar(postShopCar.toString(), auth)
                 .statusCode(201);
+
+        HashMap filter = new HashMap();
+        filter.put("idUsuario", userToTest.get_id());
+        shopCarClient.getShopCars(filter)
+                .statusCode(200)
+                .body("quantidade", equalTo(1));
+
+        shopCarClient.finalizePurchase(auth)
+                .statusCode(200)
+                .body("message", equalTo("Registro excluído com sucesso"));
+
+
+        /* Assert */
+        shopCarClient.getShopCars(filter)
+                .statusCode(200)
+                .body("quantidade", equalTo(0));
 
     }
 

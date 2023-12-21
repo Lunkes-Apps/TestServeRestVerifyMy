@@ -1,14 +1,14 @@
 [
   {
-    "nome": "Mateus Cardoso",
-    "email": "Mateus@Cardoso.com",
+    "nome": "Mateus Cardoso QA Automation",
+    "email": "Mateus2@Cardoso.com",
     "password": "@Dc3abc",
     "administrador": "true"
   },
   {
-    "nome": "Testador Santos",
-    "email": "testador@santos.com",
+    "nome": "Testador Santos QA Automation",
+    "email": "testador2@santos.com",
     "password": "teste1234",
-    "administrador": "false"
+    "administrador": "true"
   }
 ]

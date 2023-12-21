@@ -28,7 +28,7 @@ public class DeleteUserTest extends BaseTest {
 
         /* Arrange */
         User user = userClient.getUsers().statusCode(200)
-                .extract().as(GetResponse.class).getUsuarios().get(2);
+                .extract().as(GetResponse.class).getUsuarios().get(0);
 
         /* Act */
         userClient.deletUser(user.get_id())

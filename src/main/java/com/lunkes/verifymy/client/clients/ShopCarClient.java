@@ -51,7 +51,7 @@ public class ShopCarClient extends BaseClient {
                 .then();
     }
 
-    public ValidatableResponse deletShopCar(String id, String auth) {
+    public ValidatableResponse finalizePurchase(String auth) {
         return given()
                 .spec(getSpec())
                 .header("Authorization", auth)

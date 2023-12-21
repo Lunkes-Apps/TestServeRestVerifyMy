@@ -5,6 +5,7 @@ import com.lunkes.verifymy.domain.GetResponse;
 import com.lunkes.verifymy.domain.User;
 import lombok.extern.java.Log;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -16,8 +17,8 @@ import static org.hamcrest.Matchers.notNullValue;
 @Log
 public class GetUserTest extends BaseTest {
 
-    @BeforeClass
-    public void setUpTest(){
+    @BeforeMethod
+    public void setUpTest() {
         deletAllPreviusUsers();
         insertInitialData("src/test/resources/testMass/initialMass.json");
         log.info("Test Mass has been inserted");
@@ -27,18 +28,20 @@ public class GetUserTest extends BaseTest {
     public void getUsersThenReturnCorrectBodyUserListTest() throws IOException {
 
         /* Act */
-        userClient.getUsers()
+        HashMap filter = new HashMap();
+        filter.put("nome", "QA Automation");
+        userClient.getUsers(filter)
 
                 /* Assert */
                 .statusCode(200)
                 .body("quantidade", equalTo(6),
-                        "usuarios.find{it.nome == 'Testador Santos'}.email",
-                        equalTo("testador@santos.com"),
-                        "usuarios.find{it.nome == 'Testador Santos'}.password",
+                        "usuarios.find{it.nome == 'Testador Santos QA Automation'}.email",
+                        equalTo("testador2@santos.com"),
+                        "usuarios.find{it.nome == 'Testador Santos QA Automation'}.password",
                         equalTo("teste1234"),
-                        "usuarios.find{it.nome == 'Testador Santos'}.administrador",
+                        "usuarios.find{it.nome == 'Testador Santos QA Automation'}.administrador",
                         equalTo("true"),
-                        "usuarios.find{it.nome == 'Testador Santos'}._id",
+                        "usuarios.find{it.nome == 'Testador Santos QA Automation'}._id",
                         notNullValue()
                 );
     }
@@ -49,7 +52,9 @@ public class GetUserTest extends BaseTest {
         /* Arrange */
         HashMap<String, String> filter = new HashMap<>();
         filter.put("nome", "Gabriel Pereira");
-        User userTest = userClient.getUsers(filter).extract().as(GetResponse.class).getUsuarios().get(0);
+        User userTest = userClient.getUsers(filter)
+                .statusCode(200)
+                .extract().as(GetResponse.class).getUsuarios().get(0);
 
         /* Act */
         userClient.getUserById(userTest.get_id())
@@ -92,13 +97,13 @@ public class GetUserTest extends BaseTest {
                 .statusCode(200)
                 .body(
                         "quantidade", equalTo(4),
-                        "usuarios.find{it.nome == 'Testador Santos'}.email", equalTo("testador@santos.com"),
-                        "usuarios.find{it.nome == 'Testador Santos'}.password", equalTo("teste1234"),
-                        "usuarios.find{it.nome == 'Testador Santos'}.administrador", equalTo("true"),
+                        "usuarios.find{it.nome == 'Testador Da Silva QA Automation'}.email", equalTo("testador2@silva.com"),
+                        "usuarios.find{it.nome == 'Testador Da Silva QA Automation'}.password", equalTo("teste123"),
+                        "usuarios.find{it.nome == 'Testador Da Silva QA Automation'}.administrador", equalTo("true"),
 
-                        "usuarios.find{it.nome == 'Testador Da Silva'}.email", equalTo("testador@silva.com"),
-                        "usuarios.find{it.nome == 'Testador Da Silva'}.password", equalTo("teste123"),
-                        "usuarios.find{it.nome == 'Testador Da Silva'}.administrador", equalTo("true")
+                        "usuarios.find{it.nome == 'Testador Da Silva2 QA Automation'}.email", equalTo("testador42@silva.com"),
+                        "usuarios.find{it.nome == 'Testador Da Silva2 QA Automation'}.password", equalTo("teste1232"),
+                        "usuarios.find{it.nome == 'Testador Da Silva2 QA Automation'}.administrador", equalTo("true")
                 );
     }
 

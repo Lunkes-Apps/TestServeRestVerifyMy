@@ -1,18 +1,18 @@
 [
   {
-    "nome": "Logitech MX Vertical",
+    "nome": "Logitech2 MX Vertical QA Automation",
     "preco": 470,
     "descricao": "Mouse",
     "quantidade": 381
   },
   {
-    "nome": "Mesa Gamer DELL",
+    "nome": "Mesa2 Gamer DELL QA Automation",
     "preco": 2005,
     "descricao": "Mesa para jogos da DELL",
     "quantidade": 235
   },
   {
-    "nome": "Monitor DELL",
+    "nome": "Monitor2 DELL QA Automation",
     "preco": 1059,
     "descricao": "Monitor DELL 30 polegadas",
     "quantidade": 2396

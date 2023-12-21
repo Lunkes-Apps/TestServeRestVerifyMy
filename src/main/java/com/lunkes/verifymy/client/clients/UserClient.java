@@ -73,7 +73,9 @@ public class UserClient extends BaseClient {
     }
 
     public List<User> getUsersList(){
-        return getUsers().statusCode(200)
+        HashMap filter = new HashMap();
+        filter.put("nome", "QA Automation");
+        return getUsers(filter).statusCode(200)
                 .extract().as(GetResponse.class).getUsuarios();
     }
 

@@ -76,7 +76,9 @@ public class ProdutClient extends BaseClient {
     }
 
     public List<Product> getProductsList(){
-        return getProducts().statusCode(200)
+        HashMap filter = new HashMap();
+        filter.put("nome", "QA Automation");
+        return getProducts(filter).statusCode(200)
                 .extract().as(GetResponseProdutos.class).getProdutos();
     }
 }

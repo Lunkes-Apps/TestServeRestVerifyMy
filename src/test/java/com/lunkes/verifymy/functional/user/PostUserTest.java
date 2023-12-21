@@ -27,8 +27,8 @@ public class PostUserTest extends BaseTest {
 
         /* Arrange */
         User user = User.builder()
-                .nome("João Carvalho")
-                .email("joao@carvalho.com")
+                .nome("João Carvalho QA Automation")
+                .email("joaow@carvalho.com")
                 .administrador("true")
                 .password("vamostestar")
                 .build();

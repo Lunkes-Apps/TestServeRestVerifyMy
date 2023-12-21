@@ -5,6 +5,7 @@ import com.lunkes.verifymy.domain.GetResponse;
 import com.lunkes.verifymy.domain.User;
 import lombok.extern.java.Log;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -15,7 +16,7 @@ import static org.hamcrest.Matchers.matchesPattern;
 @Log
 public class PutUserTest extends BaseTest {
 
-    @BeforeClass
+    @BeforeMethod
     public void setUpTest() {
         deletAllPreviusUsers();
         insertInitialData("src/test/resources/testMass/initialMass.json");
@@ -26,12 +27,11 @@ public class PutUserTest extends BaseTest {
     public void putUserThenReturnCorrectBodyResponseTest() throws IOException {
 
         /* Arrange */
-        User user = userClient.getUsers().statusCode(200)
-                .extract().as(GetResponse.class).getUsuarios().get(3);
+        User user = userClient.getUsersList().get(0);
 
         String id = user.get_id();
         user.set_id(null);
-        user.setNome("Um novo nome teste");
+        user.setNome("Um novo nome teste QA Automation");
         String body = user.toString();
 
         /* Act */
@@ -58,10 +58,10 @@ public class PutUserTest extends BaseTest {
         User user = userClient.getUsers().statusCode(200)
                 .extract().as(GetResponse.class).getUsuarios().get(3);
 
-        String id = "tesIdABC";
+        String id = "tesIdABC QA Automation";
         user.set_id(null);
         user.setNome("Um novo nome");
-        user.setEmail("novo@gmail.com");
+        user.setEmail("novaaaaao@gmail.com");
         String body = user.toString();
 
         /* Act */
