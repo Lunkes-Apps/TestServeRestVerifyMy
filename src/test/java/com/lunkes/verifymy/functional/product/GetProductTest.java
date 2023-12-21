@@ -6,6 +6,7 @@ import com.lunkes.verifymy.domain.Product;
 import lombok.extern.java.Log;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
@@ -16,7 +17,7 @@ import static org.hamcrest.Matchers.equalTo;
 @Log
 public class GetProductTest extends BaseTest {
 
-    @BeforeClass
+    @BeforeMethod
     public void setUpTest() {
         deletAllPreviusUsers();
         insertInitialData("src/test/resources/testMass/initialMassUsers.json");
@@ -30,7 +31,9 @@ public class GetProductTest extends BaseTest {
     public void getProductsThenReturCorrectList() {
 
         /* Act */
-        List<Product> productList = produtClient.getProducts()
+        HashMap filter = new HashMap();
+        filter.put("nome", "QA Automation");
+        List<Product> productList = produtClient.getProducts(filter)
                 /* Assert */
                 .statusCode(200)
                 .body("quantidade", equalTo(3))

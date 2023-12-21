@@ -2,10 +2,13 @@ package com.lunkes.verifymy.client.clients;
 
 import com.beust.ah.A;
 import com.lunkes.verifymy.client.base.BaseClient;
+import com.lunkes.verifymy.domain.GetResponseProdutos;
+import com.lunkes.verifymy.domain.Product;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 
 import java.util.HashMap;
+import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
@@ -53,7 +56,7 @@ public class ProdutClient extends BaseClient {
                 .then();
     }
 
-    public ValidatableResponse deletProdut(String id, String auth) {
+    public ValidatableResponse deletProduct(String id, String auth) {
         return given()
                 .spec(getSpec())
                 .header("Authorization", auth)
@@ -72,5 +75,10 @@ public class ProdutClient extends BaseClient {
                 .then();
     }
 
-
+    public List<Product> getProductsList(){
+        HashMap filter = new HashMap();
+        filter.put("nome", "QA Automation");
+        return getProducts(filter).statusCode(200)
+                .extract().as(GetResponseProdutos.class).getProdutos();
+    }
 }

@@ -1,37 +1,37 @@
 [
   {
-    "nome": "Testador Da Silva2",
-    "email": "testador2@silva.com",
+    "nome": "Testador Da Silva2 QA Automation",
+    "email": "testador42@silva.com",
     "password": "teste1232",
     "administrador": "true"
   },
   {
-    "nome": "Testador Da Silva4",
-    "email": "testador@silva4.com",
+    "nome": "Testador Da Silva4 QA Automation",
+    "email": "testador3343@silva4.com",
     "password": "teste1234",
     "administrador": "true"
   },
   {
-    "nome": "Lucas Cardoso",
-    "email": "Lucas@pCardoso.com",
+    "nome": "Lucas Cardoso QA Automation",
+    "email": "Lucas2@pCardoso.com",
     "password": "@Dc3abc",
-    "administrador": "false"
+    "administrador": "true"
   },
   {
-    "nome": "Testador Santos",
-    "email": "testador@santos.com",
+    "nome": "Testador Santos QA Automation",
+    "email": "testador2@santos.com",
     "password": "teste1234",
     "administrador": "true"
   },
   {
-    "nome": "Gabriel Pereira",
-    "email": "gabriek@pereira.com",
+    "nome": "Gabriel Pereira QA Automation",
+    "email": "gabriek2@pereira.com",
     "password": "testeABC",
     "administrador": "true"
   },
   {
-    "nome": "Testador Da Silva",
-    "email": "testador@silva.com",
+    "nome": "Testador Da Silva QA Automation",
+    "email": "testador2@silva.com",
     "password": "teste123",
     "administrador": "true"
   }
