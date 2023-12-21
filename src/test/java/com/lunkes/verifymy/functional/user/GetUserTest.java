@@ -88,7 +88,7 @@ public class GetUserTest extends BaseTest {
 
         /* Arrange */
         HashMap<String, String> filter = new HashMap<>();
-        filter.put("nome", "Test");
+        filter.put("nome", "QA Automation");
 
         /* Act */
         userClient.getUsers(filter)
