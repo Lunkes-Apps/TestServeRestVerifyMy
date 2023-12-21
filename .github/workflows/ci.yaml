@@ -18,6 +18,7 @@ jobs:
       - name: execute maven
         run:  mvn clean test '-Denv=dev' '-Dtest=contract.*Test.java'
   functional-test:
+    needs: [contract-test]
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
@@ -30,6 +31,7 @@ jobs:
       - name: execute maven
         run:  mvn clean test '-Denv=dev' '-Dtest=functional.*.*Test.java'
   integration-test:
+    needs: [contract-test]
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
