@@ -28,7 +28,7 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
       - name: execute maven
-        run: mvn clean test '-Denv=dev' '-Dtest=functional.*Test.java'
+        run:  mvn clean test '-Denv=dev' '-Dtest=functional.*.*Test.java'
   integration-test:
     runs-on: ubuntu-latest
     steps:
