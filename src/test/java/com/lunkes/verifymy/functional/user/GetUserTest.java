@@ -96,7 +96,7 @@ public class GetUserTest extends BaseTest {
                 /* Assert */
                 .statusCode(200)
                 .body(
-                        "quantidade", equalTo(4),
+                        "quantidade", equalTo(6),
                         "usuarios.find{it.nome == 'Testador Da Silva QA Automation'}.email", equalTo("testador2@silva.com"),
                         "usuarios.find{it.nome == 'Testador Da Silva QA Automation'}.password", equalTo("teste123"),
                         "usuarios.find{it.nome == 'Testador Da Silva QA Automation'}.administrador", equalTo("true"),
