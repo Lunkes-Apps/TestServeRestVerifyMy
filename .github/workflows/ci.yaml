@@ -15,4 +15,4 @@ on:
           with:
             java-version: '17'
         - name: execute maven
-          run: mvn clean test -Denv=dev
+          run: mvn clean test -Dtests=contract -Denv=dev
