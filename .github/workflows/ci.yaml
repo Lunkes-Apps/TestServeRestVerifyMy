@@ -15,7 +15,7 @@ on:
           with:
             java-version: '17'
         - name: execute maven
-          run:  mvn clean test '-Denv=local' '-Dtest=contract.*Test.java'
+          run:  mvn clean test '-Denv=dev' '-Dtest=contract.*Test.java'
     functional-test:
       runs-on: ubuntu-latest
       steps:
@@ -26,7 +26,7 @@ on:
           with:
             java-version: '17'
         - name: execute maven
-          run: mvn clean test '-Denv=local' '-Dtest=functional.*Test.java'
+          run: mvn clean test '-Denv=dev' '-Dtest=functional.*Test.java'
     integration-test:
       runs-on: ubuntu-latest
       steps:
@@ -37,4 +37,4 @@ on:
           with:
             java-version: '17'
         - name: execute maven
-          run: mvn clean test '-Denv=local' '-Dtest=integration.*Test.java'
+          run: mvn clean test '-Denv=dev' '-Dtest=integration.*Test.java'
