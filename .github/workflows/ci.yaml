@@ -15,4 +15,26 @@ on:
           with:
             java-version: '17'
         - name: execute maven
-          run: mvn clean test -Dtests=contract -Denv=dev
+          run:  mvn clean test '-Denv=local' '-Dtest=contract.*Test.java'
+    functional-test:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout code
+          uses: actions/checkout@v3
+        - name: Setup Java
+          uses: actions/setup-java@v3
+          with:
+            java-version: '17'
+        - name: execute maven
+          run: mvn clean test '-Denv=local' '-Dtest=functional.*Test.java'
+    integration-test:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout code
+          uses: actions/checkout@v3
+        - name: Setup Java
+          uses: actions/setup-java@v3
+          with:
+            java-version: '17'
+        - name: execute maven
+          run: mvn clean test '-Denv=local' '-Dtest=integration.*Test.java'
