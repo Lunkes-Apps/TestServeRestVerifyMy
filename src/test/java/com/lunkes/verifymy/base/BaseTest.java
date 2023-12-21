@@ -3,11 +3,13 @@ package com.lunkes.verifymy.base;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.lunkes.verifymy.client.clients.AuthClient;
 import com.lunkes.verifymy.client.clients.ProdutClient;
+import com.lunkes.verifymy.client.clients.ShopCarClient;
 import com.lunkes.verifymy.client.clients.UserClient;
 import com.lunkes.verifymy.domain.GetResponse;
 import com.lunkes.verifymy.domain.GetResponseProdutos;
 import com.lunkes.verifymy.domain.Product;
 import com.lunkes.verifymy.domain.User;
+import com.lunkes.verifymy.domain.shopcar.GetResponseShopCar;
 import lombok.extern.java.Log;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -29,6 +31,7 @@ public class BaseTest {
     public static UserClient userClient = new UserClient();
     public static ProdutClient produtClient = new ProdutClient();
     public static AuthClient authClient = new AuthClient();
+    public static ShopCarClient shopCarClient = new ShopCarClient();
 
     public List<User> usersToTest;
     public List<Product> productsToTest;
@@ -55,15 +58,32 @@ public class BaseTest {
         GetResponseProdutos products = produtClient.getProducts()
                 .extract().as(GetResponseProdutos.class);
         products.getProdutos().forEach((product -> {
-            produtClient.deletProdut(product.get_id(), auth).statusCode(200);
+            produtClient.deletProduct(product.get_id(), auth).statusCode(200);
         }));
         log.info(products.getQuantidade() + " previous users has been deleted");
+    }
+
+    protected void deleteAllPreviusShopCars(){
+        GetResponseShopCar shopCars = shopCarClient.getShopCars()
+                .statusCode(200)
+                .extract().as(GetResponseShopCar.class);
+
+        shopCars.getCarrinhos().forEach(shopCar -> {
+            User user = userClient.getUserById(shopCar.getIdUsuario())
+                            .statusCode(200)
+                                    .extract().as(User.class);
+
+            auth = authClient.getAuth(user.getEmail(), user.getPassword());
+
+            shopCarClient.deletShopCar(shopCar.get_id(), auth)
+                    .statusCode(200);
+        });
     }
 
     protected void insertInitialData(String path){
         usersToTest = getJsonOfObject(path, new TypeReference<List<User>>() {});
         usersToTest.forEach((user -> {
-            userClient.postUser(user.toBody()).statusCode(201);
+            userClient.postUser(user.toString()).statusCode(201);
         }));
     }
 
@@ -82,6 +102,7 @@ public class BaseTest {
 
     @AfterClass
     public void tearDown(){
+        deleteAllPreviusShopCars();
         deleteAllPreviusProducts();
         deletAllPreviusUsers();
     }

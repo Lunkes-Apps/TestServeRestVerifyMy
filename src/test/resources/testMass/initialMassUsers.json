@@ -9,6 +9,6 @@
     "nome": "Testador Santos",
     "email": "testador@santos.com",
     "password": "teste1234",
-    "administrador": "False"
+    "administrador": "false"
   }
 ]

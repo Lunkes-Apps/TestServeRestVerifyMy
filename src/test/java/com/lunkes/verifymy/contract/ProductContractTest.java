@@ -15,14 +15,16 @@ public class ProductContractTest extends BaseTest {
     public void setUpTest() {
         deletAllPreviusUsers();
         insertInitialData("src/test/resources/testMass/initialMass.json");
+        authUser();
+        insertInitialProducts("src/test/resources/testMass/initialMassProdutos.json");
         log.info("Test Mass has been inserted");
     }
     @Test
-    public void contracGettUserTest(){
-        userClient.getUsers()
+    public void contracGettProductTest(){
+        produtClient.getProducts()
                 .statusCode(200)
                 .body(matchesJsonSchema(
-                        new File(PATH_CONTRACT_SCHEMAS + "/contract-get-products-schema.json")
+                        new File(PATH_CONTRACT_SCHEMAS + "/contract-get-produtos-schema.json")
                 ));
 
     }

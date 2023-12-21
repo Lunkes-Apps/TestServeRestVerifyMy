@@ -29,12 +29,12 @@ public class PostUserTest extends BaseTest {
         User user = User.builder()
                 .nome("João Carvalho")
                 .email("joao@carvalho.com")
-                .administrador(true)
+                .administrador("true")
                 .password("vamostestar")
                 .build();
 
         /* Act */
-        userClient.postUser(user.toBody())
+        userClient.postUser(user.toString())
 
                 /* Assert */
                 .statusCode(201)
@@ -51,7 +51,7 @@ public class PostUserTest extends BaseTest {
         user.setNome("Outro Nome");
 
         /* Act */
-        userClient.postUser(user.toBody())
+        userClient.postUser(user.toString())
 
                 /* Assert */
                 .statusCode(400)
@@ -66,12 +66,12 @@ public class PostUserTest extends BaseTest {
         User user = User.builder()
                 .nome("")
                 .email("")
-                .administrador(false)
+                .administrador("false")
                 .password("")
                 ._id("testeId")
                 .build();
         /* Act */
-        userClient.postUser(user.toBody())
+        userClient.postUser(user.toString())
 
                 /* Assert */
                 .statusCode(400)

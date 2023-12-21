@@ -60,7 +60,7 @@ public class GetUserTest extends BaseTest {
                         "nome", equalTo(userTest.getNome()),
                         "email", equalTo(userTest.getEmail()),
                         "password", equalTo(userTest.getPassword()),
-                        "administrador", equalTo(String.valueOf(userTest.isAdministrador())),
+                        "administrador", equalTo(String.valueOf(userTest.getAdministrador())),
                         "_id", equalTo(userTest.get_id())
                 );
     }

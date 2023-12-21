@@ -22,7 +22,7 @@ public class UserContractTest extends BaseTest {
         userClient.getUsers()
                 .statusCode(200)
                 .body(matchesJsonSchema(
-                        new File(PATH_CONTRACT_SCHEMAS + "/contract-get-products-schema.json")
+                        new File(PATH_CONTRACT_SCHEMAS + "/contract-get-users-schema.json")
                 ));
 
     }

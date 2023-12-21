@@ -1,44 +1,39 @@
 package com.lunkes.verifymy.client.clients;
 
-import com.beust.ah.A;
 import com.lunkes.verifymy.client.base.BaseClient;
-import com.lunkes.verifymy.domain.GetResponseProdutos;
-import com.lunkes.verifymy.domain.Product;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 
 import java.util.HashMap;
-import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
-public class ProdutClient extends BaseClient {
+public class ShopCarClient extends BaseClient {
 
-    private static final String USER_URL = "/produtos";
+    private static final String USER_URL = "/carrinhos";
 
 
-    public ValidatableResponse getProducts() {
+    public ValidatableResponse getShopCars() {
         return given()
                 .spec(getSpec())
                 .get(USER_URL)
                 .then();
     }
 
-    public ValidatableResponse getProducts(HashMap filter){
+    public ValidatableResponse getShopCars(HashMap filter){
         RequestSpecification spec = given()
                 .spec(getSpec());
 
-        if(filter.containsKey("nome")) spec.queryParam("nome", filter.get("nome"));
-        if(filter.containsKey("preco")) spec.queryParam("preco", filter.get("preco"));
-        if(filter.containsKey("descricao")) spec.queryParam("descricao", filter.get("descricao"));
-        if(filter.containsKey("quantidade")) spec.queryParam("quantidade", filter.get("quantidade"));
+        if(filter.containsKey("precoTotal")) spec.queryParam("precoTotal", filter.get("precoTotal"));
+        if(filter.containsKey("idUsuario")) spec.queryParam("idUsuario", filter.get("idUsuario"));
+        if(filter.containsKey("quantidadeTotal")) spec.queryParam("quantidadeTotal", filter.get("quantidadeTotal"));
         if(filter.containsKey("_id")) spec.queryParam("_id", filter.get("_id"));
 
         return spec.get(USER_URL)
                 .then();
     }
 
-    public ValidatableResponse getProductById(String id) {
+    public ValidatableResponse getShopCarById(String id) {
         return given()
                 .spec(getSpec())
                 .pathParam("id", id)
@@ -46,7 +41,7 @@ public class ProdutClient extends BaseClient {
                 .then();
     }
 
-    public ValidatableResponse postProduct(String body, String auth) {
+    public ValidatableResponse postShopCar(String body, String auth) {
 
         return given()
                 .spec(getSpec())
@@ -56,16 +51,15 @@ public class ProdutClient extends BaseClient {
                 .then();
     }
 
-    public ValidatableResponse deletProduct(String id, String auth) {
+    public ValidatableResponse deletShopCar(String id, String auth) {
         return given()
                 .spec(getSpec())
                 .header("Authorization", auth)
-                .pathParam("id",id)
-                .delete(USER_URL + "/{id}")
+                .delete(USER_URL + "/concluir-compra")
                 .then();
     }
 
-    public ValidatableResponse putProduct(String id, String userBody){
+    public ValidatableResponse putShopCar(String id, String userBody){
 
         return given()
                 .spec(getSpec())
@@ -75,8 +69,4 @@ public class ProdutClient extends BaseClient {
                 .then();
     }
 
-    public List<Product> getProductsList(){
-        return getProducts().statusCode(200)
-                .extract().as(GetResponseProdutos.class).getProdutos();
-    }
 }

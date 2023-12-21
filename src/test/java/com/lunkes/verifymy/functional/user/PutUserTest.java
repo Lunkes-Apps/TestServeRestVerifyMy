@@ -32,7 +32,7 @@ public class PutUserTest extends BaseTest {
         String id = user.get_id();
         user.set_id(null);
         user.setNome("Um novo nome teste");
-        String body = user.toBody();
+        String body = user.toString();
 
         /* Act */
         userClient.putUser(id, body)
@@ -47,7 +47,7 @@ public class PutUserTest extends BaseTest {
                 .body("nome", equalTo(user.getNome()),
                         "email", equalTo(user.getEmail()),
                         "password", equalTo(user.getPassword()),
-                        "administrador", equalTo(String.valueOf(user.isAdministrador())),
+                        "administrador", equalTo(String.valueOf(user.getAdministrador())),
                         "_id", equalTo(id));
     }
 
@@ -62,7 +62,7 @@ public class PutUserTest extends BaseTest {
         user.set_id(null);
         user.setNome("Um novo nome");
         user.setEmail("novo@gmail.com");
-        String body = user.toBody();
+        String body = user.toString();
 
         /* Act */
         userClient.putUser(id, body)

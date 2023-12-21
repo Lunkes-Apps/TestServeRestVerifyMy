@@ -1,11 +1,15 @@
 package com.lunkes.verifymy.client.clients;
 
 import com.lunkes.verifymy.client.base.BaseClient;
+import com.lunkes.verifymy.domain.GetResponse;
+import com.lunkes.verifymy.domain.GetResponseProdutos;
+import com.lunkes.verifymy.domain.Product;
 import com.lunkes.verifymy.domain.User;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 
 import java.util.HashMap;
+import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
@@ -66,6 +70,11 @@ public class UserClient extends BaseClient {
                 .body(userBody)
                 .put(USER_URL + "/{id}")
                 .then();
+    }
+
+    public List<User> getUsersList(){
+        return getUsers().statusCode(200)
+                .extract().as(GetResponse.class).getUsuarios();
     }
 
 
