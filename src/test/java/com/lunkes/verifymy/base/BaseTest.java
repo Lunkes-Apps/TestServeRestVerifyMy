@@ -36,7 +36,7 @@ public class BaseTest {
 
     public static String auth;
 
-    @BeforeClass
+    @BeforeClass(groups = {"hooks"})
     @Parameters({"env"})
     public void setup(@Optional("dev") String environment) {
         baseURI = getProperty("api.uri." + environment);
@@ -88,7 +88,7 @@ public class BaseTest {
         auth = authClient.getAuth(user, password);
     }
 
-    @AfterMethod
+    @AfterMethod(groups = {"hooks"})
     public void tearDown() {
         deleteAllPreviusShopCars();
         deleteAllPreviusProducts();

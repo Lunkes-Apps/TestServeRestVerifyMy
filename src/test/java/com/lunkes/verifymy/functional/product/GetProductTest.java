@@ -17,7 +17,7 @@ import static org.hamcrest.Matchers.equalTo;
 @Log
 public class GetProductTest extends BaseTest {
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"hooks"})
     public void setUpTest() {
         deletAllPreviusUsers();
         insertInitialData("src/test/resources/testMass/initialMassUsers.json");
@@ -27,7 +27,7 @@ public class GetProductTest extends BaseTest {
         log.info("Test Mass has been inserted");
     }
 
-    @Test
+    @Test(groups = {"regression"})
     public void getProductsThenReturCorrectList() {
 
         /* Act */
@@ -79,7 +79,7 @@ public class GetProductTest extends BaseTest {
         }));
     }
 
-    @Test
+    @Test(groups = {"regression"})
     public void getProductByIdThenReturCorrectList() {
 
         /* Arrange */

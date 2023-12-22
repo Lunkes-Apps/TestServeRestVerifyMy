@@ -15,14 +15,14 @@ import static org.hamcrest.Matchers.*;
 @Log
 public class PostUserTest extends BaseTest {
 
-    @BeforeClass
+    @BeforeClass(groups = {"hooks"})
     public void setUpTest() {
         deletAllPreviusUsers();
         insertInitialData("src/test/resources/testMass/initialMass.json");
         log.info("Test Mass has been inserted");
     }
 
-    @Test
+    @Test(groups = {"regression"})
     public void postUserThenReturnCorrectBodyResponseTest() throws IOException {
 
         /* Arrange */
@@ -43,7 +43,7 @@ public class PostUserTest extends BaseTest {
                 );
     }
 
-    @Test
+    @Test(groups = {"regression"})
     public void postExistentUserThenReturnAlertBodyResponseTest() throws IOException {
 
         /* Arrange */

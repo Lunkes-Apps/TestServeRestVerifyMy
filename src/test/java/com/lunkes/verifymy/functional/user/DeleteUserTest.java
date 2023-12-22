@@ -16,14 +16,14 @@ import static org.hamcrest.Matchers.matchesPattern;
 @Log
 public class DeleteUserTest extends BaseTest {
 
-    @BeforeClass
+    @BeforeClass(groups = {"hooks"})
     public void setUpTest() {
         deletAllPreviusUsers();
         insertInitialData("src/test/resources/testMass/initialMass.json");
         log.info("Test Mass has been inserted");
     }
 
-    @Test
+    @Test(groups = {"regression"})
     public void deleteUserThenReturnCorrectBodyResponseTest() throws IOException {
 
         /* Arrange */

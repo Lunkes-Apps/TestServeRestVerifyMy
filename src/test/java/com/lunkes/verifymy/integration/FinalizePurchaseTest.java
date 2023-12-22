@@ -18,7 +18,7 @@ import static org.hamcrest.Matchers.equalTo;
 @Log
 public class FinalizePurchaseTest extends BaseTest {
 
-    @BeforeClass
+    @BeforeClass(groups = {"hooks"})
     public void setUpTest() {
         deletAllPreviusUsers();
         insertInitialData("src/test/resources/testMass/initialMassUsers.json");
@@ -29,7 +29,7 @@ public class FinalizePurchaseTest extends BaseTest {
         log.info("Test Mass has been inserted");
     }
 
-    @Test
+    @Test(groups = {"integration"})
     public void WhenUserPutProductsIntoShopCarAndFinalizePurchaseThanItIsDeleted() {
         /**
          * Given user and products have been created

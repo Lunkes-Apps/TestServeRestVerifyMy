@@ -17,14 +17,14 @@ import static org.hamcrest.Matchers.notNullValue;
 @Log
 public class GetUserTest extends BaseTest {
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"hooks"})
     public void setUpTest() {
         deletAllPreviusUsers();
         insertInitialData("src/test/resources/testMass/initialMass.json");
         log.info("Test Mass has been inserted");
     }
 
-    @Test
+    @Test(groups = {"regression"})
     public void getUsersThenReturnCorrectBodyUserListTest() throws IOException {
 
         /* Act */
@@ -83,7 +83,7 @@ public class GetUserTest extends BaseTest {
                 );
     }
 
-    @Test
+    @Test(groups = {"regression"})
     public void getUserByFilterThenReturnSpecifUserTest() {
 
         /* Arrange */
