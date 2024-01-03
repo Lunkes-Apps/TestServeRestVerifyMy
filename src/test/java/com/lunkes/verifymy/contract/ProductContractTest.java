@@ -11,7 +11,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 
 @Log
 public class ProductContractTest extends BaseTest {
-    @BeforeClass
+    @BeforeClass(groups = {"hooks"})
     public void setUpTest() {
         deletAllPreviusUsers();
         insertInitialData("src/test/resources/testMass/initialMass.json");
@@ -19,7 +19,7 @@ public class ProductContractTest extends BaseTest {
         insertInitialProducts("src/test/resources/testMass/initialMassProdutos.json");
         log.info("Test Mass has been inserted");
     }
-    @Test
+    @Test(groups = {"contract"})
     public void contracGettProductTest(){
         produtClient.getProducts()
                 .statusCode(200)

@@ -1,0 +1,13 @@
+<suite name="Functional" verbose="1" parallel="tests" thread-count="02">
+    <test name="Execution test">
+        <groups>
+            <run>
+                <include name="integration" />
+                <include name="hooks" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.lunkes.verifymy.integration.FinalizePurchaseTest"/>
+        </classes>
+    </test>
+</suite>

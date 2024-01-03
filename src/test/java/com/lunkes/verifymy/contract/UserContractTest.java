@@ -11,13 +11,13 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 
 @Log
 public class UserContractTest extends BaseTest {
-    @BeforeClass
+    @BeforeClass(groups = {"hooks"})
     public void setUpTest() {
         deletAllPreviusUsers();
         insertInitialData("src/test/resources/testMass/initialMass.json");
         log.info("Test Mass has been inserted");
     }
-    @Test
+    @Test(groups = {"contract"})
     public void contracGettUserTest(){
         userClient.getUsers()
                 .statusCode(200)
